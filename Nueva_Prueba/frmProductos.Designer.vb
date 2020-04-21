@@ -27,10 +27,10 @@ Partial Class frmProductos
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txt_producto = New System.Windows.Forms.TextBox()
+        Me.txt_precio = New System.Windows.Forms.TextBox()
+        Me.txt_marca = New System.Windows.Forms.TextBox()
+        Me.txt_proveedor = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txt_buscar = New System.Windows.Forms.TextBox()
@@ -47,10 +47,10 @@ Partial Class frmProductos
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txt_proveedor)
+        Me.GroupBox1.Controls.Add(Me.txt_marca)
+        Me.GroupBox1.Controls.Add(Me.txt_precio)
+        Me.GroupBox1.Controls.Add(Me.txt_producto)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -98,33 +98,33 @@ Partial Class frmProductos
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Proveedor:"
         '
-        'TextBox1
+        'txt_producto
         '
-        Me.TextBox1.Location = New System.Drawing.Point(210, 54)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(368, 26)
-        Me.TextBox1.TabIndex = 4
+        Me.txt_producto.Location = New System.Drawing.Point(210, 54)
+        Me.txt_producto.Name = "txt_producto"
+        Me.txt_producto.Size = New System.Drawing.Size(368, 26)
+        Me.txt_producto.TabIndex = 4
         '
-        'TextBox2
+        'txt_precio
         '
-        Me.TextBox2.Location = New System.Drawing.Point(85, 122)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(146, 26)
-        Me.TextBox2.TabIndex = 5
+        Me.txt_precio.Location = New System.Drawing.Point(85, 122)
+        Me.txt_precio.Name = "txt_precio"
+        Me.txt_precio.Size = New System.Drawing.Size(146, 26)
+        Me.txt_precio.TabIndex = 5
         '
-        'TextBox3
+        'txt_marca
         '
-        Me.TextBox3.Location = New System.Drawing.Point(381, 125)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(197, 26)
-        Me.TextBox3.TabIndex = 6
+        Me.txt_marca.Location = New System.Drawing.Point(381, 125)
+        Me.txt_marca.Name = "txt_marca"
+        Me.txt_marca.Size = New System.Drawing.Size(197, 26)
+        Me.txt_marca.TabIndex = 6
         '
-        'TextBox4
+        'txt_proveedor
         '
-        Me.TextBox4.Location = New System.Drawing.Point(125, 207)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(453, 26)
-        Me.TextBox4.TabIndex = 7
+        Me.txt_proveedor.Location = New System.Drawing.Point(125, 207)
+        Me.txt_proveedor.Name = "txt_proveedor"
+        Me.txt_proveedor.Size = New System.Drawing.Size(453, 26)
+        Me.txt_proveedor.TabIndex = 7
         '
         'DataGridView1
         '
@@ -229,10 +229,10 @@ Partial Class frmProductos
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_proveedor As TextBox
+    Friend WithEvents txt_marca As TextBox
+    Friend WithEvents txt_precio As TextBox
+    Friend WithEvents txt_producto As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
